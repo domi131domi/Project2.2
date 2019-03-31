@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{446D8205-1911-4F68-B5C3-2672AB18EEA0}</ProjectGuid>
-    <RootNamespace>Project22</RootNamespace>
+    <ProjectGuid>{9DEB23BB-EC17-447A-A28A-CDF2D826D720}</ProjectGuid>
+    <RootNamespace>Tests</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -117,11 +117,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ElementWrapper.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Gtest\googletest-master\googletest\include\src\gtest-all.cc" />
+    <ClCompile Include="..\..\..\..\..\..\Gtest\googletest-master\googletest\include\src\gtest_main.cc" />
+    <ClCompile Include="..\Project2.2\ElementWrapper.cpp" />
+    <ClCompile Include="Project2.2Tests.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ElementWrapper.h" />
+    <ClInclude Include="..\Project2.2\ElementWrapper.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
