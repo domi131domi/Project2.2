@@ -128,6 +128,7 @@ void ElementWrapper<Type>::reset(Type* const adress) {
 		}
 	pointer = new Pointer;
 	pointer->adress = adress;
+	pointer->counter = 1;
 }
 
 template<class Type>

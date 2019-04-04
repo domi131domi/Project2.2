@@ -28,7 +28,9 @@ int main() {
 		std::cout << el2.count() << std::endl;
 		std::cout << el3.count() << std::endl;
 	}
-
+	ElementWrapper<int> element(2);
+	int * p = new int;
+	element.reset(p);
 	system("pause");
 	return 0;
 }
